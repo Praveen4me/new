@@ -1,0 +1,22 @@
+server:
+  port: 9090
+spring:
+  application:
+    name: Ems-Branch
+ 
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: Root@123
+    url: jdbc:mysql://localhost:3306/testing
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+      
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    show-sql: true
+  mvc:
+    dispatch-options-request: true
